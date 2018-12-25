@@ -13,7 +13,7 @@ func showLogo() {
 		int(win.GetSystemMetrics(win.SM_CXSCREEN)/5*4),
 		int(win.GetSystemMetrics(win.SM_CYSCREEN)/5))
 
-	logoWin.LoadURL("http://app/index.html#/logo")
+	logoWin.LoadURL(uiAddress + "index.html#/logo")
 	logoWin.HideDockIcon()
 	logoWin.ShowWindow()
 

@@ -8,7 +8,7 @@ func showMain() {
 	if mainWin == nil {
 		//窗口不存在,新建一个
 		mainWin = blink.NewWebView(false, 1366, 920)
-		mainWin.LoadURL("http://app/index.html#/")
+		mainWin.LoadURL(uiAddress + "index.html#/")
 		mainWin.SetWindowTitle("Blink Demo")
 		mainWin.MoveToCenter()
 		mainWin.ShowWindow()
