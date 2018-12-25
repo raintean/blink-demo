@@ -1,0 +1,12 @@
+#idea
+.idea
+
+#dist
+/dist
+
+#bindata
+*_bin*.go
+
+#golang
+/.go
+go.sum
