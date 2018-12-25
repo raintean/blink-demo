@@ -27,15 +27,8 @@ func main() {
 		AssetInfo: ui.AssetInfo,
 	})
 
-	//创建一个新的窗口
-	view := blink.NewWebView(false, 1366, 920)
-	view.LoadURL("http://app/index.html")
-	view.SetWindowTitle("Blink Demo")
-	view.MoveToCenter()
-	view.ShowWindow()
-	view.On("destroy", func(_ *blink.WebView) {
-		close(exit)
-	})
+	//显示logo小图标
+	showLogo()
 
 	//等待退出
 	<-exit

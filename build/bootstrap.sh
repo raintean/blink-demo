@@ -8,7 +8,7 @@ rm -rf ./ui/dist
 
 echo -e "----------\nbuild web ui...\n----------"
 cd /app/ui
-cnpm install
+npm ci
 npm run build
 
 echo -e "----------\ngenerate bin data file...\n----------"
